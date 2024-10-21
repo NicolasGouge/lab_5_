@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - User Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>User Information Form</h1>
+        <form id="user-form">
+            <label>First Name: <input type="text" id="firstName" required></label><br>
+            <label>Last Name: <input type="text" id="lastName" required></label><br>
+            <label>Email: <input type="email" id="email" required></label><br>
+            <label>Address: <input type="text" id="address" required></label><br>
+            <label>City: <input type="text" id="city" required></label><br>
+            <label>Province: <input type="text" id="province" required></label><br>
+
+            <label>Membership:</label><br>
+            <input type="radio" name="membership" value="Premium" id="premium" checked> Premium<br>
+            <input type="radio" name="membership" value="Standard" id="standard"> Standard<br>
+            <input type="radio" name="membership" value="Basic" id="basic"> Basic<br>
+
+            <button type="button" id="sendBtn">Send</button>
+            <button type="reset">Cancel</button>
+        </form>
+
+        <div id="output"></div>
+    </main>
+
+    <footer>
+        <p>ILAC & EFREI - HTML, CSS, and JavaScript Assignment</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
